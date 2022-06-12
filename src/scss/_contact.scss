@@ -1,0 +1,122 @@
+.section__contact {
+  background: white;
+
+  .wrapper {
+    background-color: $primary;
+    border-radius: 30px 30px 0 0;
+  }
+
+  &-title {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: white;
+  }
+
+  .contact {
+    padding: 180px 0 104px 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint992) {
+      flex-direction: column;
+      gap: 120px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        padding-top: 72px;
+        gap: 80px;
+    }
+
+    &__item {
+      &__form {
+        margin-top: 56px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        @media (max-width: $breakpoint480) {
+           align-items: center;
+        }
+
+        &-input {
+          width: 460px;
+          background: none;
+          border-bottom: 1px solid white;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 22px;
+          color: white;
+          padding-bottom: 16px;
+
+          @media (max-width: $breakpoint992) {
+            width: 370px;
+          }
+
+          @media (max-width: $breakpoint480) {
+            width: 100%;
+          }
+
+          &::placeholder {
+            opacity: 0.7;
+          }
+        }
+
+        .btn {
+          margin-top: 32px;
+        }
+      }
+
+      &-variant {
+        p:first-child {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          color: white;
+          opacity: 0.5;
+        }
+
+        p:nth-child(2) {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 36px;
+          color: white;
+          margin-top: 8px;
+        }
+
+        .icons {
+          display: flex;
+          align-items: center;
+          gap: 32px;
+
+          svg {
+            cursor: pointer;
+            path {
+              transition: 0.3s all ease;
+            }
+
+            &:hover path {
+              fill: $secondary;
+            }
+          }
+        }
+      }
+
+      .contacts {
+        margin-top: 56px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+      }
+    }
+  }
+}

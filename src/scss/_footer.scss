@@ -1,0 +1,59 @@
+// Footer
+footer {
+  display: block;
+  background-color: $primary;
+  padding-bottom: 60px;
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    &__menu  {
+      display: flex;
+
+      @media (max-width: $breakpoint590) {
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      li {
+        margin-left: 64px;
+
+        @media (max-width: $breakpoint768) {
+          margin-left: 40px;
+        }
+
+        @media (max-width: $breakpoint590) {
+            margin-left: 0;
+        }
+      }
+
+      li:first-child {
+        margin-left: 0;
+      }
+
+      a {
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        color: white;
+        transition: 100ms ease-in;
+
+        &:hover {
+          color: darken($color: white, $amount: 30%);
+        }
+      }
+    }
+  }
+}

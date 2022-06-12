@@ -1,0 +1,60 @@
+.section__action {
+  background-color: white;
+
+  .container {
+    background: url("../img/bg.png") no-repeat center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 199px 0;
+
+    @media (max-width: $breakpoint882) {
+        padding: 100px 15px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        padding: 50px 15px;
+    }
+  }
+
+  &-title {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 78px;
+    color: $text;
+
+    @media (max-width: $breakpoint768) {
+        line-height: 62px;
+    }
+
+    @media (max-width: $breakpoint590) {
+        font-size: 44px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        line-height: 52px;
+    }
+  }
+
+  &-subtitle {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: $subtext;
+    margin-top: 24px;
+    margin-bottom: 64px;
+    max-width: 700px;
+
+    @media (max-width: $breakpoint768) {
+        max-width: 558px;
+    }
+
+    @media (max-width: $breakpoint590) {
+        font-size: 22px;
+    }
+  }
+}

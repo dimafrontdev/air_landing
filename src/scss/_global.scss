@@ -1,0 +1,72 @@
+// Container
+.container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding + px;
+
+  // @media (max-width: $breakpoint1450) {
+  //     max-width: 1200px;
+  // }
+
+  // @media (max-width: $breakpoint992) {
+  //     max-width: 970px;
+  // }
+
+  // @media (max-width: $breakpoint768) {
+  //     max-width: 740px;
+  // }
+
+  // @media (max-width: $breakpoint480) {
+  //     max-width: none;
+  // }
+}
+
+// Body Locked
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: $sectionBg;
+
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+.btn {
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  display: block;
+}
+
+.btn-primary {
+  background-color: $secondary;
+  width: 264px;
+  padding: 14px 0;
+  border-radius: 8px;
+  transition: 100ms ease;
+
+  &:hover {
+    background-color: darken($secondary, 10%);
+  }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
